@@ -1,3 +1,8 @@
+@font-face{
+    font-family: "Tuskergrotesk 3800 Super";
+    src: url(TuskerGrotesk-3800Super.otf);
+}
+
 :root {
     --primary-color: #fe0000;
     --primary-dark: #1F252E;
@@ -105,14 +110,16 @@ li a:hover {
 
 .image .font{
     color: white;
-    font-size: 6.7rem;
+    font-size: 6.27rem;
     font-family: "Tuskergrotesk 3800 Super", Impact, sans-serif;
+    font-stretch: extra-condensed;
     padding: 40px 10px;
     text-align: justify;
     position: absolute;
     animation: leftSideAni 1s ease forwards;
     animation-delay: 1s;
     opacity: 0;
+    line-height: 2em;
 }
 
 .image img {
@@ -433,7 +440,9 @@ li a:hover {
     
     .image .font{
         color: white;
-        font-size: 3.64rem;
+        font-size: 4rem;
+        letter-spacing: 0.1px;
+        line-height: normal;
     }
 
     .image img {
