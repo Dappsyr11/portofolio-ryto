@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="about.css">
+    <title>About | Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="about.css">
+    <link rel="icon" type="image/x-icon" href="img/20240404_002636.png">
+</head>
+
+<body>
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="#">R y t o o !</a>
+            </div>
+            <input type="checkbox" id="click">
+
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+
+            <ul>
+                <li><a href="index.html" style="--navAni:1;">Home</a></li>
+                <li><a href="uix.html" style="--navAni:2">UIX</a></li>
+                <li><a href="graphic.html" style="--navAni:3">Graphic</a></li>
+                <li><a href="phedit.html" style="--navAni:4">Editing</a></li>
+                <li><a href="about.html"  class="active"  style="--navAni:5;color: #fe0000">About</a></li>
+                <li><a href="https://wa.me/qr/HJ4XHNVDJVSYF1" style="--navAni:6">Contact</a></li>
+            </ul>
+
+            <label class="mode">
+                <input type="checkbox" id="darkModeToggle">
+                <i class='bx bxs-moon'></i>
+            </label>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="main">
+             <div class="detail">
+                <h3>A little more about</h3>
+                <h1><span style="color:#fe0000;">RYTOO!</span></h1>
+                <br>
+                <p>I'm a student at Jakarta State Polytechnic. I choose Informatics Engineering study program because this is one way for me to achieve my dream to be a Web Developer, Designer, and Programmer. I also learning about graphic, ui/ux design, photo editing, and sketch drawing for my side work.
+                </p>
+                <br>
+                <p>My experience includes conducting user research, developing visionary concepts, and bringing ideas to life through interactive prototypes. With a positive attitude and a growth-oriented mindset, I’m continuously seeking opportunities to broaden my skills and deliver meaningful, engaging experiences.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="recap">
+        <div class="content">
+            <h3><b>Student at Jakarta State Polytechnic</b></h3>
+            <p> D4 Informatics Engineering, 2024 - now</p>
+            <img src="img/kelas.jpg" alt="">
+        </div>
+        <div class="content">
+            <h3><b>Part of HIMATIK</b></h3>
+            <p>Staff - Creative Team</p>
+            <img src="img/himatik.JPG" alt="">
+        </div>
+    </section>
+
+    <section class="images">
+        <img src="img/images.png" alt="">
+    </section>
+
+
+    <section class="footer">
+        <div class="foot">
+            <div class="author">
+                <p style="color: var(--primary-color);">THANKS!</p>
+            </div>
+            <div class="mid">
+                <p>daffasyrfs@gmail.com</p>
+                <p>Made by myself © 2025 ryto</p>
+            </div>
+            <div class="content">
+                <p><a href="uix.html">UIX</a></p>
+                <p><a href="graphic.html">Graphic</a></p>
+                <p><a href="phedit.html">Editing</a></p>
+                <p><a href="about.html">About</a></p>
+                <p><a href="https://wa.me/qr/HJ4XHNVDJVSYF1">Contact</a></p>
+                <p><a href="https://drive.google.com/file/d/1-8r-8FMKY6QIZbNSUGbS3qAg-EZFvOI4/view?usp=sharing" target="_blank">Portfolio</a></p>
+                <p><a href="https://drive.google.com/file/d/18TP5rLoCwxRvHQCJDXwIhzUWMz4Aovdy/view?usp=sharing" target="_blank">CV</a></p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+
+
+    </script>
+</body>
+</html>
