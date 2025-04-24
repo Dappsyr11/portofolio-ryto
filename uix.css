@@ -241,6 +241,10 @@ li a:hover {
     .logo a {
         color: #fff;
     }
+
+    .info .name h2{
+        color: white;
+    }
 }
 
 .dark-mode header {
